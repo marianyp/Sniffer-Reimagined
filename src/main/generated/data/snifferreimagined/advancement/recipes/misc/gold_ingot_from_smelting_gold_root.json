@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gold_root": {
+      "conditions": {
+        "items": [
+          {
+            "items": "snifferreimagined:gold_root"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "snifferreimagined:gold_ingot_from_smelting_gold_root"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gold_root"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "snifferreimagined:gold_ingot_from_smelting_gold_root"
+    ]
+  }
+}

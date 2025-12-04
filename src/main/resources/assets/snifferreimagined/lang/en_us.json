@@ -1,0 +1,12 @@
+{
+  "block.snifferreimagined.enriched_farmland": "Enriched Farmland",
+  "item.snifferreimagined.gold_root": "Gold Root",
+  "item.snifferreimagined.iron_root": "Iron Root",
+  "item.snifferreimagined.skeleton_skull_fragment": "Skeleton Skull Fragment",
+  "item.snifferreimagined.wither_skeleton_skull_fragment": "Wither Skeleton Skull Fragment",
+  "item.snifferreimagined.worm": "Worm",
+  "item.modifiers.bait": "When cast:",
+  "item.modifiers.bait_value": "%s Seconds to Catch a Fish",
+  "subtitles.item.worm.use": "Worm placed in soil",
+  "subtitles.item.bait.equip": "Bait attached to fishing rod"
+}

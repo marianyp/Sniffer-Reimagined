@@ -1,0 +1,28 @@
+{
+  "required": true,
+  "package": "dev.mariany.snifferreimagined.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AbstractBlockStateMixin",
+    "SnifferEggBlockMixin",
+    "BlocksMixin",
+    "EnchantmentHelperMixin",
+    "EntityMixin",
+    "FishingBobberEntityMixin",
+    "FishingRodItemMixin",
+    "ItemStackMixin",
+    "MobEntityMixin",
+    "SnifferBrainMixin",
+    "SnifferEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "SnifferEntityRendererMixin",
+    "SnifferEntityRenderStateMixin"
+  ]
+}

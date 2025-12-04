@@ -1,0 +1,10 @@
+{
+  "values": [
+    {
+      "id": "#minecraft:nylium",
+      "required": false
+    },
+    "minecraft:soul_sand",
+    "minecraft:soul_soil"
+  ]
+}

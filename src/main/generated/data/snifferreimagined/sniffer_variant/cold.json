@@ -1,0 +1,14 @@
+{
+  "asset_id": "snifferreimagined:entity/sniffer/cold_sniffer",
+  "diggable_blocks": "#minecraft:sniffer_diggable_block",
+  "loot_table": "minecraft:gameplay/sniffer_digging",
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": "#snifferreimagined:spawns_ice_variant_sniffers"
+      },
+      "priority": 1
+    }
+  ]
+}

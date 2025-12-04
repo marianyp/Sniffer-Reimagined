@@ -1,0 +1,14 @@
+{
+  "asset_id": "snifferreimagined:entity/sniffer/warped_sniffer",
+  "diggable_blocks": "#snifferreimagined:sniffer_nether_diggable_blocks",
+  "loot_table": "snifferreimagined:gameplay/sniffer_digging/nether",
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": "#snifferreimagined:spawns_warped_variant_sniffers"
+      },
+      "priority": 2
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "asset_id": "minecraft:entity/sniffer/sniffer",
+  "diggable_blocks": "#minecraft:sniffer_diggable_block",
+  "loot_table": "minecraft:gameplay/sniffer_digging",
+  "spawn_conditions": [
+    {
+      "priority": 0
+    }
+  ]
+}

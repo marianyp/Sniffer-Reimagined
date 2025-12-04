@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "moisture=0": {
+      "model": "snifferreimagined:block/enriched_farmland"
+    },
+    "moisture=1": {
+      "model": "snifferreimagined:block/enriched_farmland"
+    },
+    "moisture=2": {
+      "model": "snifferreimagined:block/enriched_farmland"
+    },
+    "moisture=3": {
+      "model": "snifferreimagined:block/enriched_farmland"
+    },
+    "moisture=4": {
+      "model": "snifferreimagined:block/enriched_farmland"
+    },
+    "moisture=5": {
+      "model": "snifferreimagined:block/enriched_farmland"
+    },
+    "moisture=6": {
+      "model": "snifferreimagined:block/enriched_farmland"
+    },
+    "moisture=7": {
+      "model": "snifferreimagined:block/enriched_farmland_moist"
+    }
+  }
+}

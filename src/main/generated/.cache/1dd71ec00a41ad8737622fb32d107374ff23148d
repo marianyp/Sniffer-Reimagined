@@ -1,0 +1,5 @@
+// 1.21.8	-999999999-01-01T00:00:00	Sniffer Reimagined/Tags for minecraft:worldgen/biome
+33e5cebc30d2b184f12eb50c51c5031fb468ee4a data/snifferreimagined/tags/worldgen/biome/spawns_cherry_variant_sniffers.json
+527733b03afceb98389d8eaa2b3bcda8f51c9049 data/snifferreimagined/tags/worldgen/biome/spawns_crimson_variant_sniffers.json
+837cef36043584fec24565466e620979a6f655a3 data/snifferreimagined/tags/worldgen/biome/spawns_ice_variant_sniffers.json
+191d589b353c0774ae4fc444fca7ad6997b366cc data/snifferreimagined/tags/worldgen/biome/spawns_warped_variant_sniffers.json
