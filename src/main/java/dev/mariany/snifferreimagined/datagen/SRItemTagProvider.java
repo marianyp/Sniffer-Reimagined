@@ -21,6 +21,11 @@ public class SRItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         valueLookupBuilder(ItemTags.PIGLIN_LOVED).add(SRItems.GOLD_ROOT);
+        valueLookupBuilder(ItemTags.SNIFFER_FOOD).add(SRItems.WORM);
+        valueLookupBuilder(ItemTags.CHICKEN_FOOD).add(SRItems.WORM);
+        valueLookupBuilder(ItemTags.FROG_FOOD).add(SRItems.WORM);
+        valueLookupBuilder(ItemTags.AXOLOTL_FOOD).add(SRItems.WORM);
+        valueLookupBuilder(ItemTags.TURTLE_FOOD).add(SRItems.WORM);
         valueLookupBuilder(SRTags.Items.SNIFFER_MUSHROOMS).add(Items.RED_MUSHROOM).add(Items.BROWN_MUSHROOM);
         valueLookupBuilder(SRTags.Items.SNIFFER_NETHER_MUSHROOMS).add(Items.CRIMSON_FUNGUS).add(Items.WARPED_FUNGUS);
     }
