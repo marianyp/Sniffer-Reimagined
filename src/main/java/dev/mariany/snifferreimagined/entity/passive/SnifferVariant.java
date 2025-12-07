@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Optional;
 
 public record SnifferVariant(
-        AssetInfo assetInfo,
+        AssetInfo.TextureAssetInfo assetInfo,
         SpawnConditionSelectors spawnConditions,
         Optional<RegistryKey<LootTable>> lootTable,
         Optional<TagKey<Block>> diggableBlocks
@@ -32,7 +32,7 @@ public record SnifferVariant(
     public static final Codec<SnifferVariant> CODEC = RecordCodecBuilder.create(
             instance -> instance
                     .group(
-                            AssetInfo.MAP_CODEC.forGetter(SnifferVariant::assetInfo),
+                            AssetInfo.TextureAssetInfo.MAP_CODEC.forGetter(SnifferVariant::assetInfo),
                             SpawnConditionSelectors.CODEC.fieldOf("spawn_conditions")
                                                          .forGetter(SnifferVariant::spawnConditions),
                             LootTable.TABLE_KEY
@@ -47,7 +47,7 @@ public record SnifferVariant(
 
     public static final Codec<SnifferVariant> NETWORK_CODEC = RecordCodecBuilder.create(
             instance -> instance
-                    .group(AssetInfo.MAP_CODEC.forGetter(SnifferVariant::assetInfo))
+                    .group(AssetInfo.TextureAssetInfo.MAP_CODEC.forGetter(SnifferVariant::assetInfo))
                     .apply(instance, SnifferVariant::new)
     );
 
@@ -57,7 +57,7 @@ public record SnifferVariant(
     public static final PacketCodec<RegistryByteBuf, RegistryEntry<SnifferVariant>> PACKET_CODEC =
             PacketCodecs.registryEntry(SRRegistryKeys.SNIFFER_VARIANT);
 
-    private SnifferVariant(AssetInfo assetInfo) {
+    private SnifferVariant(AssetInfo.TextureAssetInfo assetInfo) {
         this(assetInfo, SpawnConditionSelectors.EMPTY, Optional.empty(), Optional.empty());
     }
 

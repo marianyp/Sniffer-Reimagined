@@ -40,7 +40,7 @@ public class MobEntityMixin {
         MobEntity mobEntity = (MobEntity) (Object) this;
 
         if (mobEntity instanceof SnifferVariantState snifferVariantState) {
-            Variants.writeVariantToNbt(view, snifferVariantState.snifferReimagined$getVariant());
+            Variants.writeData(view, snifferVariantState.snifferReimagined$getVariant());
         }
     }
 
@@ -49,7 +49,7 @@ public class MobEntityMixin {
         MobEntity mobEntity = (MobEntity) (Object) this;
 
         if (mobEntity instanceof SnifferVariantState snifferVariantState) {
-            Variants.readVariantFromNbt(view, SRRegistryKeys.SNIFFER_VARIANT)
+            Variants.fromData(view, SRRegistryKeys.SNIFFER_VARIANT)
                     .ifPresent(snifferVariantState::snifferReimagined$setVariant);
         }
     }

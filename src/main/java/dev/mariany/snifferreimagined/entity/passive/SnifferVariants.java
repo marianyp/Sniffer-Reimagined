@@ -144,7 +144,7 @@ public interface SnifferVariants {
         registry.register(
                 key,
                 new SnifferVariant(
-                        new AssetInfo(assetId),
+                        new AssetInfo.TextureAssetInfo(assetId),
                         spawnConditions,
                         Optional.ofNullable(lootTable),
                         Optional.ofNullable(diggableBlocks)
