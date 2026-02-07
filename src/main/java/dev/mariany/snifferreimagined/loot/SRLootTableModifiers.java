@@ -4,6 +4,7 @@ import dev.mariany.snifferreimagined.SnifferReimagined;
 import dev.mariany.snifferreimagined.item.SRItems;
 import dev.mariany.snifferreimagined.tag.SRTags;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootTables;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.TagEntry;
@@ -25,32 +26,39 @@ public class SRLootTableModifiers {
                         return;
                     }
 
+                    if (key.equals(LootTables.OCEAN_RUIN_COLD_ARCHAEOLOGY)) {
+                        tableBuilder.modifyPools(
+                                builder -> builder.with(ItemEntry.builder(Items.SNIFFER_EGG))
+                        );
+                    }
+
                     if (key.equals(LootTables.SNIFFER_DIGGING_GAMEPLAY)) {
-                        tableBuilder.modifyPools(builder -> builder
-                                .with(
-                                        ItemEntry.builder(SRItems.IRON_ROOT)
-                                                 .apply(
-                                                         SetCountLootFunction.builder(
-                                                                 UniformLootNumberProvider.create(1, 3)
+                        tableBuilder.modifyPools(
+                                builder -> builder
+                                        .with(
+                                                ItemEntry.builder(SRItems.IRON_ROOT)
+                                                         .apply(
+                                                                 SetCountLootFunction.builder(
+                                                                         UniformLootNumberProvider.create(1, 3)
+                                                                 )
                                                          )
-                                                 )
-                                )
-                                .with(
-                                        ItemEntry.builder(SRItems.WORM)
-                                                 .apply(
-                                                         SetCountLootFunction.builder(
-                                                                 UniformLootNumberProvider.create(1, 6)
+                                        )
+                                        .with(
+                                                ItemEntry.builder(SRItems.WORM)
+                                                         .apply(
+                                                                 SetCountLootFunction.builder(
+                                                                         UniformLootNumberProvider.create(1, 6)
+                                                                 )
                                                          )
-                                                 )
-                                )
-                                .with(
-                                        TagEntry.expandBuilder(SRTags.Items.SNIFFER_MUSHROOMS)
-                                                .apply(
-                                                         SetCountLootFunction.builder(
-                                                                 UniformLootNumberProvider.create(1, 4)
-                                                         )
-                                                 )
-                                )
+                                        )
+                                        .with(
+                                                TagEntry.expandBuilder(SRTags.Items.SNIFFER_MUSHROOMS)
+                                                        .apply(
+                                                                SetCountLootFunction.builder(
+                                                                        UniformLootNumberProvider.create(1, 4)
+                                                                )
+                                                        )
+                                        )
                         );
                     }
                 }
